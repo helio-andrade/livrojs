@@ -1,0 +1,16 @@
+<script>
+    // Ler o preço do produto
+    var precoProduto = Number(prompt("Digite o preço do produto:"));
+
+    // Calcular o valor para pagamento à vista com desconto
+    var valorAVista = precoProduto * 0.9;
+
+    // Calcular o valor em 3x
+    var valorParcelado = precoProduto / 3;
+
+    // Exibir as opções de pagamento usando alert()
+    alert("Preço R$: " + precoProduto.toFixed(2) +
+        "\nÀ Vista R$: " + valorAVista.toFixed(2) +
+        "\nOu 3x de R$: " + valorParcelado.toFixed(2));
+
+</script>
