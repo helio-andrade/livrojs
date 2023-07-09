@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    #topo {
+        width: 100%;
+        background: #000;
+        height: 35px
+    }
+
+    #topo nav {
+        clear: both;
+        float: left;
+        width: 100%
+    }
+
+    #topo nav figure {
+        float: left;
+        margin: 0
+    }
+
+    #topo nav figure img {
+        float: left;
+        width: auto;
+        height: 25px;
+        margin: 5px
+    }
+
+    #topo nav ul {
+        float: right;
+        margin: 0;
+        padding: 0
+    }
+
+    #topo nav ul li {
+        float: left;
+        margin: 0 20px;
+        line-height: 35px;
+        font-size: 12px;
+    }
+
+    #topo nav ul li a {
+        color: #FFF;
+        text-decoration: none
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <header>
+        	<a href="#" title="WhatsApp"><img src="https://static.whatsapp.net/rsrc.php/v3/yJ/r/Qhrnh5evyPV.png" width="160" height="38" alt="WhatsApp"></a>
+        </header>
+        
+        <h1>Gerador de link personalizado para WhatsApp</h1>
+
+        <section class="container">
+            <div id="caixa">
+                <form name="form" method="get" action="" id="f_whats">
+                    <label for="f_numero">Informe o número do seu WhatsApp:</label>
+
+                    <div class="box-input">
+                        <div class="select">
+                            <select name="pais" id="f_pais">
+                                <option data-countryCode="BR" value="55" Selected>Brasil (+55)</option>
+                                <option data-countryCode="PT" value="351">Portugal (+351)</option>
+                                <option data-countryCode="US" value="1">USA (+1)</option>
+                                <optgroup label="Outros países">
+                                    <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+                                    <option data-countryCode="AD" value="376">Andorra (+376)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <input type="tel" name="numero" id="f_numero" placeholder="(99) 99999-9999" value="">
+                    </div>
+
+                    <label for="f_mensagem">Mensagem (opcional):</label>
+                    <input type="tel" name="mensagem" id="f_mensagem" placeholder="Digite algo para iniciar a conversa" value="">
+
+                    <div id="link-gerado">
+                        <label for="f_link">Link personalizado:</label>
+                        <div class="resultado">
+                            <a href="" id="bt_copiar" class="borda-arredondada" title="Copiar link">COPIAR</a>
+                            <input type="text" name="link" id="f_link" value="">
+                        </div>
+                        <p><a href="/" title="Refazer o link">Refazer</a></p>
+                    </div>
+
+
+                    <input type="submit" value="GERAR LINK" id="bt_submit" class="center-block">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
