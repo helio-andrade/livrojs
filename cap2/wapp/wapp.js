@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const numero = fNumeroValue.replace(/[\(\)\-\s]/g, "");
 
       const link = fMensagemValue !== ""
-        ? `https://wa.me/${fPaisValue}${numero}/?t=${encodeURIComponent(fMensagemValue)}`
+        ? `https://wa.me/${fPaisValue}${numero}/?text=${encodeURIComponent(fMensagemValue)}`
         : `https://wa.me/${fPaisValue}${numero}`;
       l = link;
 
