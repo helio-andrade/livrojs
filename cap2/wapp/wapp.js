@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const fNumeroValue = document.getElementById("f_numero").value;
     if (fNumeroValue === "") {
-      window.alert("Preencha o número do seu WhatsApp");
+      window.alert("Preencha com o número do WhatsApp!");
       document.getElementById("f_numero").focus();
       return false;
     }
